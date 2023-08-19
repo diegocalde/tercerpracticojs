@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tercera entrega</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    
+
+    <div class="container mt-4">
+      <h1 class="display-4 text center">
+        my lista de <span class="text-primary">libros</span>
+      </h1>
+      <form id="book-form">
+        <select id="select-libros" class="form-control">
+            <option value="">Seleccionar Libro</option>
+        </select>
+
+        <div class="form-gruop">
+          <label for="titulo">titulo</label>
+          <input type="text" id="titulo" class="form-control" />
+        </div>
+        <div class="form-gruop">
+          <label for="autor">autor</label>
+          <input type="text" id="autor" class="form-control" />
+        </div>
+        <div class="form-gruop">
+          <label for="editorial">editorial</label>
+          <input type="text" id="editorial" class="form-control" />
+        </div>
+        <hr />
+        <input
+          type="submit"
+          value="agregar libro"
+          class="btn btn-primary btn-block"
+        />
+      </form>
+      <h2>lista de <span class="text-primary">libros</span> seleccionados</h2>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>titulo</th>
+            <th>autor</th>
+            <th>editorial</th>
+          </tr>
+        </thead>
+        <tbody id="lista-libros"></tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
